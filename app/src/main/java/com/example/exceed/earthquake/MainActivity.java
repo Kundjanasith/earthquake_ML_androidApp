@@ -17,11 +17,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        listView = (ListView) findViewById(R.id.list_view);
+//        listView = (ListView) findViewById(R.id.list_view);
         itemArrayAdapter = new ItemArrayAdapter(getApplicationContext(), R.layout.single_list_item);
-        Parcelable state = listView.onSaveInstanceState();
-        listView.setAdapter(itemArrayAdapter);
-        listView.onRestoreInstanceState(state);
+//        Parcelable state = listView.onSaveInstanceState();
+
+//        listView.setAdapter(itemArrayAdapter);
+//        listView.onRestoreInstanceState(state);
         InputStream inputStream = getResources().openRawResource(R.raw.stats);
         CSVReader csv = new CSVReader(inputStream);
         List<String[]> scoreList = csv.read();
