@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         dropdown = (Spinner)findViewById(R.id.spinner1);
         but = (Button)findViewById(R.id.button);
 
-
+        init();
 
 //        calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
 //            @Override
@@ -66,6 +66,69 @@ public class MainActivity extends AppCompatActivity {
 //        for(String[] scoreData:scoreList){
 //            itemArrayAdapter.add(scoreData);
 //        }
+
+    }
+    private Button leftz;
+    private Button rightz;
+    private Button moth;
+    public void init(){
+        leftz = (Button)findViewById(R.id.left);
+        rightz = (Button)findViewById(R.id.right);
+        moth = (Button)findViewById(R.id.month_year);
+
+        Date date = new Date();
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        int year = cal.get(Calendar.YEAR);
+        int month = cal.get(Calendar.MONTH);
+        int day = cal.get(Calendar.DAY_OF_MONTH);
+
+        final String[] m = {"January","Febuary","March","April","May","June","July","August","September","October","November","December"};
+
+        moth.setText(m[month]+" / "+year);
+        leftz.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                String h = moth.getText().toString().split(" / ")[0];
+                int mm = 0;
+                for(int i=0 ; i<12 ; i++){
+                    if(h.equals(m[i])) mm = i-1;
+                }
+                int yy = Integer.parseInt(moth.getText().toString().split(" / ")[1]);
+                if(mm==-1 && yy==2016){
+                }
+                else{
+                    if(mm==-1){
+                        mm=11;
+                        yy=yy-1;
+                    }
+                    moth.setText(m[mm]+" / "+yy);
+                }
+            }
+        });
+
+        rightz.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                String h = moth.getText().toString().split(" / ")[0];
+                int mm = 0;
+                for(int i=0 ; i<12 ; i++){
+                    if(h.equals(m[i])) mm = i+1;
+                }
+                int yy = Integer.parseInt(moth.getText().toString().split(" / ")[1]);
+                if(mm==12 && yy==2026){
+                }
+                else{
+                    if(mm==12){
+                        mm=0;
+                        yy=yy+1;
+                    }
+                    moth.setText(m[mm]+" / "+yy);
+                }
+            }
+        });
+
+
 
     }
 }

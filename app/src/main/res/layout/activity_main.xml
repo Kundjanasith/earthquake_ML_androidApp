@@ -15,11 +15,22 @@
         <!--android:layout_marginTop="@dimen/margin_top">-->
     <!--</ListView>-->
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="16dp"
+        android:text="Service [ Machine Learning ]"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true" />
+
     <Spinner
         android:backgroundTint="#FFFFFF"
         android:id="@+id/spinner1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:background="@android:drawable/btn_dropdown"
         android:spinnerMode="dropdown"
         android:layout_below="@id/textView2"
@@ -36,15 +47,7 @@
         <!--android:layout_alignParentStart="true">-->
     <!--</CalendarView>-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_marginTop="16dp"
-        android:text="Service [ Machine Learning ]"
-        android:layout_marginLeft="16dp"
-        android:id="@+id/textView2"
-        android:layout_alignParentTop="true" />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -76,10 +79,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/spinner1"
         android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:weightSum="7">
         <Button
+            android:id="@+id/left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="&lt;"
             android:layout_weight="1"/>
         <Button
             android:id="@+id/month_year"
@@ -87,12 +93,15 @@
             android:layout_height="wrap_content"
             android:layout_weight="5"/>
         <Button
+            android:id="@+id/right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="&gt;"
             android:layout_weight="1"/>
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginRight="16dp"
         android:id="@+id/row1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -102,48 +111,56 @@
         <Button
             android:id="@+id/sun0"
             android:text="SUN"
+            android:textSize="13dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
         <Button
             android:id="@+id/mon0"
             android:text="MON"
+            android:textSize="13dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
         <Button
             android:id="@+id/tue0"
             android:text="TUE"
+            android:textSize="13dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
         <Button
             android:id="@+id/wed0"
             android:text="WED"
+            android:textSize="13dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
         <Button
             android:id="@+id/thu0"
             android:text="THU"
+            android:textSize="13dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
         <Button
             android:id="@+id/fri0"
             android:text="FRI"
+            android:textSize="13dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
         <Button
             android:id="@+id/sat0"
             android:text="SAT"
+            android:textSize="13dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginRight="16dp"
         android:id="@+id/row2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -195,6 +212,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginRight="16dp"
         android:id="@+id/row3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -246,6 +264,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginRight="16dp"
         android:id="@+id/row4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -297,6 +316,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginRight="16dp"
         android:id="@+id/row5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -348,6 +368,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginRight="16dp"
         android:id="@+id/row6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -399,6 +420,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginRight="16dp"
         android:id="@+id/row7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
