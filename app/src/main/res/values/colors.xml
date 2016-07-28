@@ -9,4 +9,15 @@
     <!--<color name="colorAccent">#FF4081</color>-->
     <!--<color name="colorAccent">#5D00FF</color>-->
     <color name="colorAccent">#3B3A3A</color>
+
+    <!--String[] co = {"#00ffbf","#00ff80","#bfff00","#ffff00","#ffbf00","#ff8000","#ff4000"};-->
+    <color name="C0">#BBBBBB</color>
+    <color name="C1">#00ffbf</color>
+    <color name="C2">#00ff80</color>
+    <color name="C3">#bfff00</color>
+    <color name="C4">#ffff00</color>
+    <color name="C5">#ffbf00</color>
+    <color name="C6">#ff8000</color>
+    <color name="C7">#ff4000</color>
+
 </resources>
